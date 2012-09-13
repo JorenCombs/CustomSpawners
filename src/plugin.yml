@@ -1,0 +1,14 @@
+name: CustomSpawners
+main: joren.customspawners.CustomSpawners
+version: 0.4
+description: Enables customization of mob spawners.  Allows players to pick up mob spawners.  Permissions-based.
+commands:
+  customspawner:
+    description:
+    usage:
+  spawner:
+    description:
+    usage:
+  cs:
+    description:
+    usage:
