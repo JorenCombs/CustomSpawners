@@ -332,6 +332,7 @@ public class CustomSpawners extends JavaPlugin
                 {
                     Location location = player.getLocation();
                     player.getWorld().dropItemNaturally(location, new ItemStack(Material.MOB_SPAWNER, 1));
+                    block.setTypeId(0);
                 }
             }
         }
