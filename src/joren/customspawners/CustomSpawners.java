@@ -317,7 +317,7 @@ public class CustomSpawners extends JavaPlugin
         log.log(level, header + message);
     }
     
-    @EventHandler
+    @EventHandler(priority = EventPriority.MONITOR)
     public void onBlockBreak(BlockBreakEvent event) {
         if (event.isCancelled()) {
             return;
@@ -332,7 +332,7 @@ public class CustomSpawners extends JavaPlugin
                 {
                     Location location = player.getLocation();
                     player.getWorld().dropItemNaturally(location, new ItemStack(Material.MOB_SPAWNER, 1));
-                    block.setTypeId(0);
+//                  block.setTypeId(0);
                 }
             }
         }
